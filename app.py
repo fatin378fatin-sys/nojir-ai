@@ -90,12 +90,12 @@ st.markdown("""
         background-color: #121212 !important;
     }
 
-    /* 🟢 ফিক্স: উপরের সাদা হেডার (Streamlit Top Bar) ট্রান্সপারেন্ট করা */
+    /* 🟢 ফিক্স: উপরের সাদা হেডার ট্রান্সপারেন্ট করা এবং ডানদিকের Fork/Menu বাটন গায়েব করা */
     header[data-testid="stHeader"] {
         background-color: transparent !important;
     }
-    header[data-testid="stHeader"] * {
-        color: #E0E0E0 !important;
+    [data-testid="stToolbar"] {
+        display: none !important; /* এটি উপরের ডানদিকের সবকিছু লুকিয়ে ফেলবে */
     }
 
     /* 🟢 ফিক্স: নিচের চ্যাটবক্সের পেছনের একগুঁয়ে সাদা ব্যাকগ্রাউন্ড কালো করা */
@@ -183,8 +183,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-
 # ==========================================
 # 🗄️ ডাটাবেস কানেকশন লজিক
 # ==========================================
