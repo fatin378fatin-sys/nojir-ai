@@ -75,7 +75,7 @@ CHAT_PLACEHOLDER = "আপনার আইনি প্রশ্ন বা ন�
 LOGO_FILE = "logo.jpg" 
 
 # n8n Webhook Link
-WEBHOOK_URL = "https://rahul123321.app.n8n.cloud/webhook-test/nojir"
+WEBHOOK_URL = "https://rahul123321.app.n8n.cloud/webhook/nojir"
 
 st.set_page_config(page_title=SITE_TITLE, page_icon=PAGE_ICON, layout="centered")
 st.set_page_config(page_title=SITE_TITLE, page_icon=PAGE_ICON, layout="centered")
